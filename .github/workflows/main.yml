@@ -45,7 +45,7 @@ jobs:
         run: npm run build; touch build/.nojekyll pnpm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-pages-artifact
+        uses: actions/upload-pages-artifact@v1
         with:
           path: ./build
       - name: Deploy to pages
