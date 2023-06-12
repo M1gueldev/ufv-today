@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Envfile
+        run: echo "BASE_PATH='/ufv-today'" > .env
+
       - name: Build project
         env:
           BASE_PATH: '/ufv-today'
