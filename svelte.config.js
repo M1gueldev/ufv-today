@@ -19,7 +19,9 @@ const config = {
 		adapter: adapter({
 			fallback: "index.html"
 		}),
-		base: dev ? '' : process.env.BASE_PATH,
+		paths: {
+			base: dev ? '' : process.env.BASE_PATH,
+		}
 	}
 };
 export default config;
