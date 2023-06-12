@@ -22,7 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        id: pnpm-install
         with:
           version: 8.3.1
 
